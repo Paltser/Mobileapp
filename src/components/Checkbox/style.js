@@ -15,7 +15,6 @@ export const styles = StyleSheet.create({
     height: "100%",
   },
   checkIcon: {
-    width: 12,
-    height: 9,
+    width: "100%",
   },
 });
