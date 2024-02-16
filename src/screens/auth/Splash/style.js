@@ -20,7 +20,6 @@ export const styles = StyleSheet.create({
     padding: 24,
     flexDirection: "column",
     height: "100%",
-    borderWidth: 1,
   },
   titleContainer: {
     marginVertical: 54,
