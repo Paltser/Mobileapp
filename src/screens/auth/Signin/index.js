@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 import AuthHeader from "../../../components/AuthHeader";
-import Input from "../../../components/input";
+import Input from "../../../components/Input";
 import { styles } from "./style";
 import Button from "../../../components/button";
 import Seperator from "../../../components/Separator";
