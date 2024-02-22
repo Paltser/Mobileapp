@@ -12,6 +12,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { colors } from "./src/utils/colors";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import ProductDetails from "./src/screens/app/ProductDetails";
 
 const WEB_CLIENT_ID =
   "724749197135-hl7nkteknlcdagqe2d1k66kg4dkisuq3.apps.googleusercontent.com";
@@ -85,6 +86,11 @@ const App = () => {
               <Stack.Screen
                 name="Tabs"
                 component={Tabs}
+                options={{ headerShown: false }}
+              />
+              <Stack.Screen
+                name="ProductDetails"
+                component={ProductDetails}
                 options={{ headerShown: false }}
               />
             </>

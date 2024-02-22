@@ -13,6 +13,8 @@ export const products = [
     image:
       "https://ii1.pepperfry.com/media/catalog/product/f/o/800x880/foldable-table-in-natural-colour-by-clasicraft-foldable-table-in-natural-colour-by-clasicraft-ahmtub.jpg",
     category: 2,
+    description:
+      "This is a mini table made of wood and is fMinimal Stand is made of by natural wood. The design that is very simple and minimal. This is truly one of the best furnitures in any family for now. With 3 different colors, you can easily select the best match for your home. oldable. It is very useful for small spaces. It is also very easy to carry around.",
     price: "$ 25.00",
   },
   {

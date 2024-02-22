@@ -9,7 +9,7 @@ import ProductHomeItem from "../../../components/ProductHomeItem";
 
 import { styles } from "./style";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   const [selectedCategory, setSelectedCategory] = useState();
   const [keyword, setKeyword] = useState();
   const [selectedProducts, setSelectedProducts] = useState(products);
@@ -49,7 +49,10 @@ const Home = () => {
   };
 
   const renderProductItem = ({ item }) => {
-    return <ProductHomeItem {...item} />;
+    const onProductPress = (product) => {
+      navigation.navigate("ProductDetails", { product });
+    };
+    return <ProductHomeItem onPress={() => onProductPress(item)} {...item} />;
   };
 
   return (
