@@ -13,6 +13,7 @@ import { colors } from "./src/utils/colors";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import ProductDetails from "./src/screens/app/ProductDetails";
+import CreateListing from "./src/screens/app/CreateListing";
 
 import Settings from "./src/screens/app/Settings";
 
@@ -37,6 +38,11 @@ const ProfileStack = () => {
       <Stack.Screen
         name="Settings"
         component={Settings}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="CreateListing"
+        component={CreateListing}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
