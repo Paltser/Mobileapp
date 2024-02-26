@@ -6,11 +6,15 @@ import { styles } from "./style";
 import ListItem from "../../../components/ListItem";
 import Button from "../../../components/button";
 
-const Profile = () => {
+const Profile = ({ navigation }) => {
   const num = 10;
 
   const onLogout = () => {
     console.log("Logout");
+  };
+
+  const onSettingPress = () => {
+    navigation.navigate("Settings");
   };
 
   return (
@@ -25,7 +29,11 @@ const Profile = () => {
             title="My Listings"
             subtitle={`Already have ${num} listings`}
           />
-          <ListItem title="Settings" subtitle={`Account, FAQ, Contact`} />
+          <ListItem
+            title="Settings"
+            subtitle={`Account, FAQ, Contact`}
+            onPress={onSettingPress}
+          />
         </View>
         <Button title="Add New Listing" />
       </View>
