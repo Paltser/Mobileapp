@@ -59,4 +59,8 @@ export const styles = StyleSheet.create({
     top: -10,
     right: 20,
   },
+  textarea: {
+    height: 120,
+    paddingTop: 16,
+  },
 });

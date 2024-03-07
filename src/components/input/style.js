@@ -28,4 +28,42 @@ export const styles = StyleSheet.create({
     height: 24,
     marginHorizontal: 16,
   },
+  arrow: {
+    width: 24,
+    height: 24,
+    marginHorizontal: 16,
+    transform: [{ rotate: "90deg" }],
+  },
+  placeholder: {
+    color: colors.lightGrey,
+    flex: 1,
+    paddingVertical: 20,
+    paddingHorizontal: 16,
+  },
+  modalWrapper: {
+    backgroundColor: "rgba(0,0,0,0.2)",
+    justifyContent: "center",
+    alignItems: "center",
+    flex: 1,
+  },
+  modalContent: {
+    backgroundColor: colors.white,
+    padding: 16,
+    borderRadius: 8,
+    width: "80%",
+  },
+  optionTitle: {
+    color: colors.black,
+    fontSize: 16,
+    marginBottom: 16,
+  },
+  optionText: {
+    color: colors.black,
+    fontSize: 15,
+    paddingVertical: 4,
+  },
+  selectedOption: {
+    backgroundColor: colors.blue,
+    fontWeight: "bold",
+  },
 });
